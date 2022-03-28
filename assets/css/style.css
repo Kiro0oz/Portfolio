@@ -161,6 +161,7 @@ body.light-theme {
 .light-theme .skills_content,
 .light-theme .services_card,
 .light-theme .work_card,
+.light-theme .cert_card,
 .light-theme .contact_card {
   box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, .1);
 }
@@ -635,6 +636,50 @@ body.light-theme {
   opacity: 1;
   visibility: visible;
 }
+/*============ Cert ============ */
+.cert_container {
+  padding-top: 1rem;
+}
+.cert_card {
+  background-color: var(--contanier-color);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.cert_img  {
+  border-radius: 1rem;
+  margin-bottom: .75rem;
+}
+
+.cert_title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: .25rem;
+}
+
+.cert_desc {
+  font-size: var(--font-medium);
+  margin-bottom: 1.5rem;
+}
+
+.cert_button {
+  width: max-content;
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+}
+
+.cert_button:hover .cert_icon {
+  transform: translateX(.25rem);
+}
+
+.cert_icon {
+  font-size: 1rem;
+  transition: .4s;
+}
+
 
 /*============ Work ============ */
 .work_container {
@@ -969,8 +1014,16 @@ body.light-theme {
     padding: 0 3.5rem
   }
 
+  .cert_container {
+    justify-content: center;
+  }
+
   .work_container {
     justify-content: center;
+  }
+
+  .cert_img {
+    width: 320px;
   }
 
   .work_img {
@@ -989,6 +1042,12 @@ body.light-theme {
 }
 
 @media screen and (min-width: 767px) {
+
+  .cert_container {
+    grid-template-columns: repeat(2, max-content);
+  }
+
+
   .work_container {
     grid-template-columns: repeat(2, max-content);
   }
@@ -1089,6 +1148,22 @@ body.light-theme {
 
   .services_card {
     padding: 5rem 2rem 1.5rem;
+  }
+
+  .cert_container {
+    gap: 3rem;
+  }
+
+  .cert_card {
+    padding: 1.25rem;
+  }
+
+  .cert_title {
+    margin-bottom: .5rem;
+  }
+
+  .cert_img {
+    margin-bottom: 1rem;
   }
 
   .work_container {
