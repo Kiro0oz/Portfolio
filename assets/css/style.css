@@ -836,7 +836,7 @@ body.light-theme {
   height: 100%;
   border: 2px solid var(--text-color-light);
   background: none;
-  color: var(--text-color)'';
+  color: var(--text-color);
   outline: none;
   padding: 1.5rem;
   border-radius: .75rem;
