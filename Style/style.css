@@ -693,6 +693,7 @@ body.light-theme {
 .work_filters {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   column-gap: .75rem;
   margin-bottom: 2rem;
@@ -1136,7 +1137,7 @@ body.light-theme {
   }
 
   .about_desc {
-    padding: 0 4rem 0 0;
+    padding: 0 2rem 0 0;
     margin-bottom: 2.5rem;
   }
 
